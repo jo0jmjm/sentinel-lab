@@ -21,15 +21,12 @@ const missions = [
 export default function Home() {
   return (
     <main className="relative overflow-hidden bg-[#050816] text-white min-h-screen">
-      {/* Background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,255,136,0.15),transparent_40%)]" />
 
       <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-[size:40px_40px]" />
 
-      {/* Scanline */}
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,transparent_50%,rgba(255,255,255,0.03)_51%)] bg-[size:100%_4px]" />
 
-      {/* Navbar */}
       <header className="relative z-10 flex items-center justify-between border-b border-white/10 px-6 py-5 backdrop-blur-sm">
         <div>
           <h1 className="text-2xl font-black tracking-[0.25em] text-emerald-400">
@@ -60,7 +57,6 @@ export default function Home() {
         </button>
       </header>
 
-      {/* Hero */}
       <section className="relative z-10 mx-auto grid max-w-7xl gap-20 px-6 py-24 lg:grid-cols-2 lg:items-center">
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-300">
@@ -89,26 +85,8 @@ export default function Home() {
               View Labs
             </button>
           </div>
-
-          <div className="mt-12 flex gap-8">
-            <div>
-              <h3 className="text-3xl font-black text-emerald-400">120+</h3>
-              <p className="text-sm text-zinc-500">Training Missions</p>
-            </div>
-
-            <div>
-              <h3 className="text-3xl font-black text-cyan-400">24/7</h3>
-              <p className="text-sm text-zinc-500">Cyber Lab Access</p>
-            </div>
-
-            <div>
-              <h3 className="text-3xl font-black text-purple-400">LIVE</h3>
-              <p className="text-sm text-zinc-500">Realtime Ranking</p>
-            </div>
-          </div>
         </div>
 
-        {/* Terminal */}
         <div className="relative">
           <div className="absolute inset-0 rounded-3xl bg-emerald-400/20 blur-3xl" />
 
@@ -124,27 +102,21 @@ export default function Home() {
             </div>
 
             <div className="space-y-5 p-6 font-mono text-sm">
-              <div>
-                <p className="text-emerald-400">
-                  &gt; initializing sentinel protocol...
-                </p>
+              <p className="text-emerald-400">
+                &gt; initializing sentinel protocol...
+              </p>
+
+              <p className="text-cyan-400">
+                &gt; scanning network nodes
+              </p>
+
+              <div className="h-2 overflow-hidden rounded-full bg-zinc-800">
+                <div className="h-full w-[78%] bg-cyan-400" />
               </div>
 
-              <div>
-                <p className="text-cyan-400">
-                  &gt; scanning network nodes
-                </p>
-
-                <div className="mt-2 h-2 overflow-hidden rounded-full bg-zinc-800">
-                  <div className="h-full w-[78%] bg-cyan-400" />
-                </div>
-              </div>
-
-              <div>
-                <p className="text-purple-400">
-                  &gt; access granted
-                </p>
-              </div>
+              <p className="text-purple-400">
+                &gt; access granted
+              </p>
 
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                 <p className="mb-3 text-zinc-400">
@@ -169,7 +141,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Missions */}
       <section className="relative z-10 mx-auto max-w-7xl px-6 py-10">
         <div className="mb-10">
           <p className="text-sm tracking-[0.3em] text-emerald-400">
@@ -212,7 +183,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="relative z-10 mt-20 border-t border-white/10 px-6 py-8 text-center text-sm text-zinc-500">
         SENTINEL LAB © 2026
       </footer>
